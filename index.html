@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leo's landing page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/icon.ico" type="image/x-icon">
+
+    <title>Portfolio Guillermo</title>
+</head>
+<body>
+    <header>
+        <button id="theme-toggle" class="theme-toggle"></button>
+        <a href=".">
+            <img id="logo" src="./assets/Logo.webp" alt="logo" width="100" height="75">
+        </a>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h3 class="hero__presentation">Hola, soy</h3>
+            <h1>Guillermo Orio Fernández</h1>
+
+            <h2>Historiador, Técnico de Redes en formación & Programador en formación</h2>
+        </section>
+
+        <section id="work">
+            <h2 class="section-header"> Sobre mi </h2>
+
+            <p>
+                Tras haber trabajado con las Humanidades Digitales en el <a class="link" href="https://inovalabs.es" target="_blank"> Instituto de Historia (CSIC) </a>, he decidido cursar un ciclo superior en ASIR 
+                y formarme en programación bajo la tutoría de <a class="link" href="https://inovalabs.es" target="_blank"> Leopoldo Estévez </a> con el fin de completar mi formación y ampliar mis horizontes profesionales.
+            </p>
+
+            <button class="button-container">
+                <a href="https://github.com/LeopoldoEstevezAgra" target="_blank" class="button">
+                    Portfolio
+                    <img src="./assets/Arrow.svg" alt="arrow" width="35" height="35">
+                </a>
+            </button>
+        </section>
+
+        <section id="biography">
+            <h2 class="section-header"> Cronología </h2>
+
+            <div class="experience">
+                <div class="experience__year">
+                    2016-2021
+                </div>
+                <div class="experience__description">
+                    Grado en Historia por la <a href="https://www.cebem.net/index.php/es/ciclos-fp/grado-superior/desenvolvemento-de-aplicacions-multiplataforma" class="link" target="_blank">
+                        USC </a>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience__year">
+                    2021-2022
+                </div>
+                <div class="experience__description">
+                    Máster Universitario en Estudios de Asia Oriental por la
+                    <a class="link" href="https://inovalabs.es" target="_blank"> 
+                        UAM </a>.
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience__year">
+                    2022
+                </div>
+                <div class="experience__description">
+                    Prácticas curriculares en el
+                    <a href="https://www.udc.es/" class="link" target="_blank">
+                        IH-CSIC
+                    </a>
+                    y estancia en el
+                    <a href="https://www.udc.es/" class="link" target="_blank">
+                        CHAM
+                    </a>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience__year">
+                    IX 2022-Hoy
+                </div>
+                <div class="experience__description">
+                    FP Superior en Administración de Sistemas Informáticos en Red en el 
+                    <a class="link" href="https://inovalabs.es" target="_blank"> 
+                        IES de Teis 
+                    </a>.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="experience__year">
+                    IX 2022-Hoy
+                </div>
+                <div class="experience__description">
+                    Formación en programación de la mano de 
+                    <a class="link" href="https://inovalabs.es" target="_blank"> 
+                        Leopoldo Estévez 
+                    </a>.
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-header"> Contacto </h2>
+
+            <div class="sn-link">
+                <img class="nv-link__icon" src="./assets/github.svg" alt="github-icon">
+                <a href="https://github.com/LeopoldoEstevezAgra" width="35" height="35" class="sn-link__text" target="_blank">@LeopoldoEstevezAgra</a>
+            </div>
+
+            <div class="sn-link">
+                <img class="nv-link__icon" src="./assets/linkedin.svg" alt="linkedin-icon">
+                <a href="https://www.linkedin.com/in/leopoldo-est%C3%A9vez-agra/" width="35" height="35" class="sn-link__text" target="_blank">@leopoldo-estévez-agra</a>
+            </div>
+
+            <div class="sn-link">
+                <img class="nv-link__icon" src="./assets/instagram.svg" alt="instagram-icon">
+                <a href="https://www.instagram.com/leopoldoesteveza/" width="35" height="35" class="sn-link__text" target="_blank">@leopoldoesteveza</a>
+            </div>
+
+            <div id="cta-message">
+            </div>
+
+            <form id="cta-form">
+                <div class="form-input-wrapper">
+                    <input id="cta-email" placeholder="email" class="textfield input" type="email" name="emailcta" id="cta-email">
+                    <label for="cta-email"> E-mail </label>
+                </div>
+
+                <div class="form-input-wrapper">
+                    <textarea id="cta-body" placeholder="Content" rows="10" class="textarea input" name="bodycta" ></textarea>
+                    <label for="cta-body"> Mensaje </label>
+                </div>
+
+
+                <button type="submit" class="button-container">
+                    <div id="cta-button" class="button">
+                        Enviar
+                        <img src="./assets/Arrow.svg" alt="arrow" width="35" height="35">
+                    </div>
+                </button>
+            </form>
+
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

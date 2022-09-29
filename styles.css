@@ -100,7 +100,7 @@ a {
     text-decoration: none;
 }
 
-.theme-toggle {
+.botones {
     background-color: var(--color-background);
     outline: none;
     border-color: none;

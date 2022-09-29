@@ -47,6 +47,7 @@ body {
     font-size: var(--typography-size-body);
     letter-spacing: var(--typography-spacing-body);
     line-height: 105%;
+    text-align: justify;
     overflow-x: hidden;
 
 }
@@ -99,9 +100,16 @@ h3 {
 a {
     text-decoration: none;
 }
-
-.botones {
+.Rectangulo {
+    position: absolute;
+    left: 0px;
+    top: 176px;
+}
+.boton-tema {
     background-color: var(--color-background);
+    position: absolute;
+    left: 1370px;
+    top: 176px;
     outline: none;
     border-color: none;
     box-shadow: none;
@@ -114,18 +122,31 @@ a {
 
 }
 
-#hero {
+.hero {
+    position: absolute;
+    left: 365px;
+    top: 91px;
     margin-bottom: 4rem;
 }
 
 .hero__presentation {
+    position: absolute;
+    left: 179px;
+    top: 113px;
     color: var(--color-primary);
 }
-
+.resumen {
+    position: absolute;
+    width: 1000px;
+    height: 541px;
+    left: 172px;
+    top: 270px;
+}
 .section-header {
     color: var(--color-primary);
     margin-bottom: 2rem;
 }
+
 
 .link {
     text-decoration: none;
@@ -190,27 +211,6 @@ a {
 
 .experience__description {
     flex-grow: 1;
-}
-
-.sn-link {
-    width: 100%;
-    margin-bottom: 1rem;
-
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.nv-link__icon {
-    width: 10%;
-    height: 2rem;
-    filter: var(--link-icon-hue-shift);
-}
-
-.sn-link__text {
-    flex-grow: 1;
-    text-decoration: none;
-    color: var(--color-accent);
 }
 
 #cta-form {

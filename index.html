@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cambay&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="./assets/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/junco rc.svg" type="image/x-icon">
 
-    <title>Guillermo Orio Fernández</title>
+    <title>Portfolio Guillermo Orio Fernández</title>
 </head>
 <body>
     <header>
-        <button id="theme-toggle" class="botones" type="button">
-                <img id="boton tema" src="./assets/botón rc.svg" width="50" height="50">
+        <button id="theme-toggle" class="boton-tema" type="button">
+                <img id="boton tema" src="./assets/boton rc.svg" width="50" height="50"/>
         </button>
         
     </header>
@@ -24,9 +24,9 @@
     <main>
         <section id="hero">
             <h3 class="hero__presentation">Hola, soy</h3>
-            <h1>Guillermo Orio Fernández</h1>
-            <img id="rectangulo encabezado" src="./assets/Rectangulo rc.svg" width="1210" height="50">
-            <h3>Historiador, Técnico de Redes en formación & Programador en formación</h3>
+            <h1 class="hero">Guillermo Orio Fernández</h1>
+            <img id="rectangulo encabezado" class="Rectangulo" src="./assets/Rectangulo rc.svg" width="1210" height="50"/>
+            <h3 class="resumen">Historiador, Técnico de Redes en formación & Programador en formación</h3>
         </section>
 
         <section id="work">
@@ -108,10 +108,20 @@
                     <img id="academia" src="./assets/academia rc.svg"/>
                 </a>
             </button>
+            <button  href="https://uam.academia.edu/GuillermoOrioFern%C3%A1ndez" class="botones" type="button">
+                <a href="https://uam.academia.edu/GuillermoOrioFern%C3%A1ndez">
+                    <img id="linkedin" src="./assets/linkedin rc.svg"/>
+                </a>
+            </button>
+            <button  href="https://uam.academia.edu/GuillermoOrioFern%C3%A1ndez" class="botones" type="button">
+                <a href="https://uam.academia.edu/GuillermoOrioFern%C3%A1ndez">
+                    <img id="github" src="./assets/github rc.svg"/>
+                </a>
+            </button>
             
         </section>
 
-        <section id="contact">
+        <section id="contact" class="mensajes">
             <h2 class="section-header"> Contacto </h2>
 
             <form id="cta-form">
@@ -129,12 +139,11 @@
                 <button type="submit" class="button-container">
                     <div id="cta-button" class="button">
                         Enviar
-                        <img src="./assets/Arrow.svg" alt="arrow" width="35" height="35">
                     </div>
                 </button>
             </form>
             <a>
-                <img id="logo" src="./assets/botón rc.svg" alt="botón rc" width="100" height="75">
+                <img id="logo" src="./assets/junco rc.svg" alt="botón rc"/>
             </a>
 
         </section>

@@ -101,20 +101,16 @@ a {
 }
 
 .theme-toggle {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 0.75rem;
-    background-color: var(--color-accent);
+    background-color: var(--color-background);
+    outline: none;
+    border-color: none;
     box-shadow: none;
     border: none;
     cursor: pointer;
-    padding: 0.75rem;
-    left: 1370px;
-    top: 176px;
 }
 
 .theme-toggle > img {
-    filter: var(--icon-hue-shift);
+    filter: none
 
 }
 

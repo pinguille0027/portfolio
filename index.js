@@ -66,7 +66,7 @@ const switchTheme = () => {
         localStorage.setItem('theme', 'light');
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeButton.innerHTML = '<img width="25" height="25" src="./assets/botón rc.svg" alt="boton-tema-oscuro">'
+        themeButton.innerHTML = '<img width="50" height="50" src="./assets/botón rc.svg" alt="boton-tema-oscuro">'
         logo.src='./assets/botón rc.svg';
         theme = 'dark';
         localStorage.setItem('theme', 'dark');

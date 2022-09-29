@@ -21,7 +21,7 @@
 
     --typography-spacing-h1: 0.04rem;
     --typography-spacing-h2: 0.05rem;
-    --typography-spacing-body: 0.05rem;
+    --typography-spacing-body: 0.02rem;
 
     --icon-hue-shift: invert(5%) sepia(10%) saturate(7495%) hue-rotate(182deg) brightness(95%) contrast(105%);
     --link-icon-hue-shift: invert(94%) sepia(31%) saturate(4501%) hue-rotate(319deg) brightness(103%) contrast(102%);
@@ -132,15 +132,74 @@ a {
 .hero__presentation {
     position: absolute;
     left: 179px;
-    top: 113px;
+    top: 125px;
     color: var(--color-primary);
 }
 .resumen {
     position: absolute;
     width: 1000px;
-    height: 541px;
+    height: 49 px;
     left: 172px;
     top: 270px;
+}
+.sobre-mi {
+    position: absolute;
+    width: 995px;
+    height: 280px;
+    left: 171px;
+    top: 363px;
+}
+.cronologia {
+    position: absolute;
+    left: 171px;
+    top: 587px;
+}
+.boton-academia {
+    background-color: var(--color-background);
+    position: absolute;
+    left: 169px;
+    top: 1000px;
+    outline: none;
+    border-color: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+.boton-linkedin {
+    background-color: var(--color-background);
+    position: absolute;
+    left: 649px;
+    top: 1000px;
+    outline: none;
+    border-color: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+.boton-github {
+    background-color: var(--color-background);
+    position: absolute;
+    left: 835px;
+    top: 1000px;
+    outline: none;
+    border-color: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+.mensajes {
+    position: absolute;
+width: 1000px;
+height: 541px;
+left: 169px;
+top: 1170px;
+}
+.junco {
+    position: absolute;
+    width: 106.7px;
+    height: 80px;
+    left: 1314px;
+    top: 1638px;
 }
 .section-header {
     color: var(--color-primary);

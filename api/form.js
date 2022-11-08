@@ -10,6 +10,7 @@ export default async function handler(request, response) {
         const msg = `${email} <br/> ${content}`;
 
         const url = `http://api.telegram.org/bot${process.env.TELETOKEN}/sendMessage?chat_id=${process.env.TELECHATID}&text=${email}`;
+        console.log(url)
         //await axios.get(url)
         await fetch(url)
         response.status(200).send();

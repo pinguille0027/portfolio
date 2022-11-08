@@ -1,5 +1,15 @@
 import axios from "axios";
 // import fetch from 'node-fetch';
+
+const insertTo = async () => {
+    const res = await axios({
+        url: "https://api.telegram.org/bot5696004560:AAFyGqxj1gVrtKI1kCPSwuqGSLPtBonHz_g/sendMessage?chat_id=1264963875&text=uyu", 
+        method: 'get'
+    });
+
+    console.log(res);
+}
+
 export default async function handler(request, response) {
     try {
         console.log(process.env.TELETOKEN);
@@ -12,10 +22,8 @@ export default async function handler(request, response) {
 
         const url = `https://api.telegram.org/bot${process.env.TELETOKEN}/sendMessage?chat_id=${process.env.TELECHATID}&text=${email}`;
         console.log(url);
-        await axios({
-            url: "https://api.telegram.org/bot5696004560:AAFyGqxj1gVrtKI1kCPSwuqGSLPtBonHz_g/sendMessage?chat_id=1264963875&text=uyu", 
-            method: 'get'
-        });
+        
+        await insertTo();
         /*
         await fetch("https://api.telegram.org/bot5696004560:AAFyGqxj1gVrtKI1kCPSwuqGSLPtBonHz_g/sendMessage?chat_id=1264963875&text=uyu", { 
             method: 'GET'

@@ -15,7 +15,7 @@ export default async function handler(request, response) {
         await fetch("https://api.telegram.org/bot5696004560:AAFyGqxj1gVrtKI1kCPSwuqGSLPtBonHz_g/sendMessage?chat_id=1264963875&text=uyu")
         response.status(200).send();
 
-    } catch {
-        response.status(400).send();
+    } catch(e) {
+        response.status(400).send(e);
     }
 }

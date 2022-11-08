@@ -26,7 +26,7 @@ form.addEventListener('submit', (e) => {
     }).then(() => {
         email.value = '';
         content.value = '';
-        message.innerHTML = 'Thank you for submitting !'
+        message.innerHTML = 'Gracias !'
         message.style.opacity = 1;
 
         setTimeout(() => {

@@ -1,4 +1,5 @@
 //import axios from "axios";
+import fetch from 'node-fetch';
 export default async function handler(request, response) {
     try {
         console.log(process.env.TELETOKEN);

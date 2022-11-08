@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio GOF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinguille0027/portfolio.git"
+  },
+  "author": "guillermo orio fernández",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinguille0027/portfolio/issues"
+  },
+  "homepage": "https://github.com/pinguille0027/portfolio#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}

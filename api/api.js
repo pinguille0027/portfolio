@@ -1,35 +1,40 @@
 const express = require('express');
 const path = require('path');
-const morgan = require('morgan')
-const nodemailer = require('nodemailer');
+const morgan = require('morgan');
 const app = express();
-
+const nodemailer = require('nodemailer');
+require('dotenv').config();
 const cookieParser = require('cookie-parser');
 
 const port = process.env.PORT || 6969;
 app.use(morgan())
 app.use(express.json())
 app.use(cookieParser())
-
-async function sendEmail() {
+console.log(process.env.HOST);
+console.log(process.env.EMAILPORT);
+console.log(process.env.EMAILUSER);
+console.log(process.env.EMAILPASS);
+console.log(process.env.EMAILFROM);
+console.log(process.env.EMAILTO);
+async function sendEmail(data) {
   // Configuramos el transportador SMTP
   let transporter = nodemailer.createTransport({
     host: process.env.HOST,
     port: process.env.EMAILPORT,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.EMAILUSER,
       pass: process.env.EMAILPASS
     }
   });
-
+  
   // Definimos el contenido del correo electrónico
   let mailOptions = {
-    from: process.env.EMAILUSER,
+    from: process.env.EMAILFROM,
     to: process.env.EMAILTO,
     subject: 'Nuevo mensaje del portfolio',
     text: `Recibiste el siguiente mensaje a través del Portfolio:
-    ${data}`
+    ${JSON.stringify(data)}`
   };
 
   // Enviamos el correo electrónico
@@ -40,12 +45,15 @@ async function sendEmail() {
 app.post('/mensaje', async (req, res) => {
   try {
     const data= req.body;
-   sendEmail()
+   await sendEmail(data);
+   res.status(200).json();
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: error.message });
   }
 });
+
+
 
 
 
